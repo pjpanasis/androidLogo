@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		#container {
+			margin: 100px auto 0 auto;
+			width: 400px;
+		}
+
+		.color {
+			background-color: rgb(165, 200, 69);
+		}
+
+		/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+		.antennas {
+			width: 170px;
+			height: 10px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.leftAnt {
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			width: 7px;
+			height: 70px;
+			border-radius: 7px;
+			transform: rotate(-30deg);
+		}
+
+		.rightAnt {
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			width: 7px;
+			height: 70px;
+			border-radius: 7px;
+			transform: rotate(30deg);
+		}
+
+		/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+		.eyes {
+			position: relative;
+			margin: 0 auto;
+			width: 160px;
+		}
+
+		.leftEye {
+			display: inline-block;
+			position: absolute;
+			top: 85px;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			background-color: #fff;
+		}
+
+		.rightEye {
+			display: inline-block;
+			position: absolute;
+			top: 85px;
+			right: 0;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			background-color: #fff;
+		}
+
+		.head {
+			margin: 28px auto 0 auto;
+			width: 260px;
+			height: 120px;
+			border-radius: 300px 300px 0 0;
+		}
+		.headContainer:hover {
+			transition: 0.30s;
+			transform: rotate(-5deg);
+		}
+
+		/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+		.torso {
+			margin: 8px auto 0 auto;
+			width: 260px;
+			height: 200px;
+			border-radius: 0 0 30px 30px;
+		}
+
+		.legs {
+			margin: 0 auto;
+			width: 200px;
+			position: relative;
+		}
+
+		.leftLeg {
+			display: inline-block;
+			position: absolute;
+			left: 30px;
+			width: 55px;
+			height: 85px;
+			border-radius: 0 0 30px 30px;
+		}
+
+		.rightLeg {
+			display: inline-block;
+			position: absolute;
+			right: 30px;
+			width: 55px;
+			height: 85px;
+			border-radius: 0 0 30px 30px;
+		}
+
+		/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+		.arms {
+			margin: 0 auto;
+			width: 400px;
+			position: relative;
+		}
+
+		.leftArm {
+			display: inline-block;
+			position: absolute;
+			top: -200px;
+			left: 10px;
+			width: 55px;
+			height: 160px;
+			border-radius: 30px;
+		}
+		.leftArm:hover {
+			transition: 0.30s;
+			transform: rotate(8deg);
+		}
+
+		.rightArm {
+			display: inline-block;
+			position: absolute;
+			top: -200px;
+			right: 10px;
+			width: 55px;
+			height: 160px;
+			border-radius: 30px;
+		}
+			
+		.rightArm:hover {
+			transition: 0.30s;
+			transform: rotate(-8deg);
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<!-- Add your site or application content here -->
+	<div id="container">
+		<div class="headContainer">
+			<div class="antennas">
+				<div class="leftAnt color"></div>
+				<div class="rightAnt color"></div>
+			</div>
+			<div class="eyes">
+				<div class="leftEye color"></div>
+				<div class="rightEye color"></div>
+			</div>
+			<div class="head color"></div>
+		</div>
+		<div class="body">
+			<div class="torso color">
+			</div>
+			<div class="arms">
+				<div class="leftArm color"></div>
+				<div class="rightArm color"></div>
+			</div>
+
+			<div class="legs">
+				<div class="leftLeg color"></div>
+				<div class="rightLeg color"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
